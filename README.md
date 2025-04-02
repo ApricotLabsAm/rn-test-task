@@ -1,4 +1,4 @@
-# 📱 React Native SDK Assignment (Mock-Only, Historical Prices Only)
+# 📱 React Native SDK Assignment
 
 We’re evaluating your ability to design and build a **modular SDK** and integrate it into a modern **React Native demo app**.
 
@@ -35,7 +35,7 @@ interface ModuleConfig {
 #### Caching
  Use AsyncStorage or react-native-mmkv to cache:
 
-#### Historical price data
+#### Current price data
 - TTL-based cache invalidation (default: 5 minutes, configurable).  
 - Manual cache invalidation:
 ```ts
@@ -50,7 +50,7 @@ e.g., BTC_USD
 
 #### React Hook
 
-- Provide a typed hook to fetch historical data:
+- Provide a typed hook to fetch current price data:
 ```ts
 const { data, isLoading, error } = useTokenPrice(['BTC', 'ETH'], 'USD');
 ```
